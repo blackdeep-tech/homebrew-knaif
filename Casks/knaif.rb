@@ -10,10 +10,10 @@
 # the documents skill's tools are optional and listed in the caveats; the ~2.5 GB model is never
 # downloaded at install time.
 cask "knaif" do
-  version "1.3.0"
-  sha256 "bb042cc45c094503d7ef2b89df0dce9efb3bdc87e67b74b94a201fe882f8590e"
+  version "1.4.0"
+  sha256 "d5a7bd13b07efc799742e179e84d4bd55c2e47eea565644cb4d95c210de10d63"
 
-  url "https://github.com/blackdeep-tech/knaif/releases/download/v1.3.0/knaif-1.3.0-macos-arm64.zip"
+  url "https://github.com/blackdeep-tech/knaif/releases/download/v1.4.0/knaif-1.4.0-macos-arm64.zip"
   name "knaif"
   desc "Turn natural-language requests into validated, executable action plans"
   homepage "https://knaif.org"
@@ -22,7 +22,7 @@ cask "knaif" do
   depends_on macos: ">= :monterey"
   depends_on formula: "ffmpeg"
 
-  binary "knaif-1.3.0-macos-arm64/bin/knaif"
+  binary "knaif-1.4.0-macos-arm64/bin/knaif"
 
   caveats <<~EOS
     Download the AI model before the first run (~2.5 GB, into ~/.knaif/models):
